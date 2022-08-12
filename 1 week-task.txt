@@ -1,0 +1,44 @@
+ 1 week task->
+1) Python-theory+prac
+2) Mysql - theory+prac
+3) pki - prac
+
+partition->shrink- create new simple volumme (computer management)
+sftp shuhari@<ip>
+cd D:/
+lls
+put rootca1.crt
+
+
+on linux/kali->
+connect pd.
+fdisk -l- to show all drives.
+/dev/sdb -location of pd
+md5sum /dev/sdb- to check hash value
+store the value in txt file.
+dd if=/dev/sdb | pv | dd of=evidence - to make bit stream copies.
+after copying check md5sum of evidence(image file)- md5sum evidence.
+(both md5sum(hash value) of original and evidence file should be same).
+
+format the pd as normal.
+run recuva recovery software, select pd.- for recovering the lost data/files.
+
+zeronisation-
+dd if=/dev/zero of=/dev/sdb - to erase the data completely/fully.
+xxd -a /dev/sdb - to check zeronization is done properly or not.
+after zeronization, try to recover the data.
+
+autopsy- analysis tool
+dumpit- memory analysis tool(memory analysis tool)
+install dumpit in sanatized pd and just run dumpit- it will gather all memory and dump it on pd.
+
+Nirlauncher/sysinternals- for system logs like date/time, opened port.
+cryptool- to encrypt/decrypt file using symmetric and asymmetric key.
+
+
+turn on windows->IIS-server certificate-> import TLS-select certificate store:web hosting->Binding-type:https-<Ip> of debian-> port-443-> acccess IP on firefox with https
+It will display connection is not secure and the certificate is issue by Rootca/IACSD
+
+
+
+
