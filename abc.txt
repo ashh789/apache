@@ -1,8 +1,0 @@
-Bitise operator
-set()
-end=""
-https://www.shuharilabs.local/ctf/sqli/703/
-X79594526A
-
-
-
