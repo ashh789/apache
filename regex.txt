@@ -1,4 +1,0 @@
-import re
-s = 'foo123bar'
-re.search('123', s)  -means find string 123 in s
-o/p- <_sre.SRE_Match object; span=(3, 6), match='123'>
